@@ -8,8 +8,5 @@ public interface StringOperator {
         return s -> after.apply(apply(s));
     }
     
-    static StringOperator identity(){
-        return t -> t;
-    }
 
 }

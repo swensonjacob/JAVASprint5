@@ -6,7 +6,7 @@ import java.util.List;
 import javax.swing.JFrame;
 
 
-public class ÖvnUppg1_Generics {
+public class ÖvnUppg1b_Generics {
 
     public static <T> void printList  (List<T> l){
         l.forEach(e -> System.out.print(e.toString()+" "));

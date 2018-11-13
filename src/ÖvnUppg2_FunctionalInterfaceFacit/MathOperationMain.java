@@ -29,6 +29,10 @@ public class MathOperationMain {
       System.out.println(subtraction.operation(1,2));
       System.out.println(multiplication.operation(1,2));
       System.out.println(division.operation(1,2));
+      
+      //Uppgift 2b
+      MathOperation justTesting = addition.add(subtraction);
+      System.out.println(justTesting.operation(10,5));
 		
    }
 }
