@@ -14,7 +14,7 @@ public class ÖvnUppg5_URLWordCount {
     public ÖvnUppg5_URLWordCount () {
 
         try{
-            URL url = new URL("http://www.puzzlers.org/pub/wordlists/pocket.txt");
+            URL url = new URL("https://github.com/dwyl/english-words/blob/master/words.txt?raw=true");
             
             BufferedReader words = new BufferedReader(
                     new InputStreamReader(url.openStream()));
