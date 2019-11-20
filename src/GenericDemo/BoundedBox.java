@@ -2,10 +2,6 @@ package GenericDemo;
 
 // A small class that showcases generics
 
-import java.util.Arrays;
-import java.util.List;
-import javax.swing.JFrame;
-
 
 public class BoundedBox<T extends String> { // T stands for "Type" 
 	private T t; 

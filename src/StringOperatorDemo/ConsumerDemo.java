@@ -15,8 +15,11 @@ public class ConsumerDemo {
         List<String> l = new ArrayList<>();
         l.add("aaaa");
         l.add("bbbb");
-        
+//        
         l.forEach(e -> System.out.println(e));
+        l.forEach(n);
+//       
     }
+    
 
 }

@@ -27,32 +27,31 @@ public class MapDemo {
         Map<String, Integer> nameLengthTracker = names.stream()
                 .collect(Collectors.toMap(p -> p, n -> n.length()));
         
-        nameLengthTracker.forEach((k,v) -> System.out.println(k +" "+v));
+//        nameLengthTracker.forEach((k,v) -> System.out.println(k +" "+v));
         
-   //     System.out.println(nameLengthTracker.entrySet());
+//        System.out.println(nameLengthTracker.entrySet());
 //        System.out.println(nameLengthTracker.keySet());
 //        System.out.println(nameLengthTracker.values());
-        
+//        
 
 //        System.out.println(nameLengthTracker.get("Anna"));
 //        
 //        System.out.println(nameLengthTracker.containsKey("Bertil"));
 //        System.out.println(nameLengthTracker.containsKey("Rulle"));
-//        
+        
 //        System.out.println(nameLengthTracker.containsValue(4));
 //        System.out.println(nameLengthTracker.containsKey(100));
-//        
-//        System.out.println(nameLengthTracker.containsKey(100));
-//        
+       
+        
  //       nameLengthTracker.put("Frideborg", 9);
         
         //För att skriva ut värdena i mappen
- //       nameLengthTracker.forEach((k,v) -> System.out.println(k +" "+v));
+//        nameLengthTracker.forEach((k,v) -> System.out.println(k +" "+v));
 
         
         //vi gör replaceAll på värdena och multiplicerar dem med 2
-//        nameLengthTracker.replaceAll((k,v) -> v * 2);
-//        nameLengthTracker.forEach((k,v) -> System.out.println(k +" "+v));
+ //       nameLengthTracker.replaceAll((k,v) -> v * 2);
+ //       nameLengthTracker.forEach((k,v) -> System.out.println(k +" "+v));
         
         //Med compute ändrar vi ett av värdena till valfritt värde
 //        nameLengthTracker.compute("Anna", (k, v) -> 100);  
@@ -73,7 +72,7 @@ public class MapDemo {
 //        //GroupBy, vi grupperar stuff efter hur långa orden är
 //        Map<Integer, List<String>> wordLength = stuff.stream()
 //                .collect(groupingBy(n->n.length()));
-//        //wordLength.forEach((k,v) -> System.out.println(k +" "+v));
+ //       wordLength.forEach((k,v) -> System.out.println(k +" "+v));
 //        System.out.println(wordLength.get(5));
         
     }

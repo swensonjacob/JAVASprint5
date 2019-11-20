@@ -22,11 +22,13 @@ public class ListenerDemo {
      
      //lambda class used to define ActionListener
      testButton.addActionListener(ae -> 
-             System.out.println("Click Detected by Lambda Listner"));
+             System.out.println("Click Detected by Lambda "
+                     + "Listner"));
      
      //Lambda used again, but with type declaration for in-parameter
      testButton.addActionListener((ActionEvent ae) -> 
-             System.out.println("Click Detected by Lambda Listner 2"));
+             System.out.println("Click Detected by Lambda "
+                     + "Listner 2"));
      
      // Swing stuff
      JFrame frame = new JFrame("Listener Test");

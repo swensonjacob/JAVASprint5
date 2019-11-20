@@ -4,7 +4,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-public class GenericNumberQueue <T extends Number> implements IGenericQueue<T> {
+public class GenericNumberQueue <T extends Number> 
+        implements IGenericQueue<T> {
     
     private List<T> innerList = new LinkedList<>();
     
@@ -23,6 +24,14 @@ public class GenericNumberQueue <T extends Number> implements IGenericQueue<T> {
     public int size(){
         return innerList.size();
     }
+    
+//    public Number getValue(){
+//        Double sum = 0.0;
+//        for (Number t : innerList){
+//            sum += t.doubleValue();
+//        }
+//        return (Number) sum;
+//    }
     
     public T getValue(){
         Double sum = 0.0;

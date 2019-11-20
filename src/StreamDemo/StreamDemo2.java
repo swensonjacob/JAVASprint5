@@ -27,11 +27,13 @@ public class StreamDemo2 {
         stuff = Arrays.asList("bike", "öljett", "spoon", "card","dime", 
                 "Monopolspel", "film", "game", "åder", "fork", 
                 "knife", "ämne", "lame", "film" );
+        
         numbers = Arrays.asList(15, 65, 23, 567, 1, 345, 33, 78, 976, 1005);
         
         //Initializing streams
         stringStream = Stream.of("green", "yellow", "green", "green", 
                 "blue", "black", "white");
+        
         intStream = IntStream.of(12, 23, 34, 13, 1);
        
 //        //Distinct
@@ -39,12 +41,13 @@ public class StreamDemo2 {
 //                .collect(Collectors.toList()));
 //        
 //        //Sorted() för en List<Integer>
-//        numbers.stream().mapToInt(Integer::valueOf).sorted()
-//                .forEach(s -> System.out.println(s));
+//        numbers.stream().mapToInt(e -> e).sorted()
+ //               .forEach(s -> System.out.println(s));
 //                
-//        //Funkar inte eftersom sorted hanterar en IntStream:
-//        System.out.println(numbers.stream().mapToInt(Integer::valueOf)
-//                .sorted().collect(Collectors.toList()));
+//        //Funkar inte eftersom sorted hanterar en IntStream 
+//        // VI kan inte skapa en List av int:ar
+//        numbers.stream().mapToInt(Integer::valueOf)
+//                .sorted().forEach(e -> System.out.println(e));   //.collect(Collectors.toList()));
 //        
 //        //För att kunna omvandla en IntStream till en lista måste vi göra boxed() på IntStreamen, då får vi en Stream igen
 //        System.out.println(numbers.stream()
@@ -62,8 +65,8 @@ public class StreamDemo2 {
 //                .collect(Collectors.toList()));
 //        
 //        //om vi vill ha svensk sortering:
-//        Collator svenskCollator = Collator
-//                .getInstance(new Locale("sv", "SE"));
+        Collator svenskCollator = Collator
+                .getInstance(new Locale("sv", "SE"));
 //        System.out.println(stuff.stream().sorted(svenskCollator)
 //                .collect(Collectors.toList()));
 //        
@@ -82,6 +85,13 @@ public class StreamDemo2 {
 //        System.out.println(numbers.stream().
 //                mapToInt(Integer::valueOf).summaryStatistics().getAverage());
 //        
+//        //Vi får en Optional
+//        System.out.println(numbers.stream().
+//                mapToDouble(Double::valueOf).min().getAsDouble());
+////        
+//        System.out.println(numbers.stream().
+//                mapToInt(Integer::valueOf).min().getAsInt());
+//        
 //        //Vi kan få strömmar från t.ex BufferedReader
 //        BufferedReader in = new BufferedReader(
 //                new FileReader("src\\StreamDemo\\totaleclipse.txt"));
@@ -93,17 +103,18 @@ public class StreamDemo2 {
 //                new FileReader("src\\StreamDemo\\totaleclipse.txt"));
 //        in2.lines().flatMap(s -> p.splitAsStream(s))
 //                .map(s -> s.toLowerCase())
-//                .distinct().sorted().forEach(s -> System.out.println(s));
+//                .distinct().sorted()
+//                .forEach(s -> System.out.println(s));
 //        
 //        //Joining, skriver ut låttexten med komma emellan
-        BufferedReader in3 = new BufferedReader(
-                new FileReader("src\\StreamDemo\\totaleclipse.txt"));
+//        BufferedReader in3 = new BufferedReader(
+//                new FileReader("src\\StreamDemo\\totaleclipse.txt"));
 //        System.out.println(in3.lines()
-//                .collect(Collectors.joining(", ")));
-        
-        System.out.println(stuff.stream()
-                .collect(Collectors.joining("-", "%", "*")));
-        
+//                .collect(Collectors.joining(",")));
+////        
+//        System.out.println(stuff.stream()
+//                .collect(Collectors.joining("-", "%", "*")));
+//        
     }
 
     public static void main(String[] args) throws FileNotFoundException{

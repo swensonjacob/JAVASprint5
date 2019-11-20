@@ -84,8 +84,8 @@ public class ÖvnUppg4_DatabasFacit {
 //        System.out.println(getAnswerCandidateFrequncy("gfdgd"));
 
 
-        Map<Category, List<String>> categoryQuestionMap = getQuestionGroupedByCategory();
-        categoryQuestionMap.forEach((k,v) -> System.out.println(k + " " +v));
+//        Map<Category, List<String>> categoryQuestionMap = getQuestionGroupedByCategory();
+//        categoryQuestionMap.forEach((k,v) -> System.out.println(k + " " +v));
     }
     
     public static void main(String[] args){

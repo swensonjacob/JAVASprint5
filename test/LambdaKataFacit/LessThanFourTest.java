@@ -1,5 +1,4 @@
-package LambdaKata;
-
+package LambdaKataFacit;
 import org.junit.Test;
 
 import java.util.List;

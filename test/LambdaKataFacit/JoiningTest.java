@@ -1,5 +1,7 @@
-package LambdaKata;
+package LambdaKataFacit;
 
+import LambdaKata.Joining;
+import LambdaKata.Person;
 import org.junit.Test;
 import java.util.List;
 import static java.util.Arrays.asList;

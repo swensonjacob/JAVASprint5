@@ -20,9 +20,9 @@ public class UnBoundWildcardDemo {
         List<Integer> li = Arrays.asList(1, 2, 3);
         List<String>  ls = Arrays.asList("one", "two", "three");
         List<Object>  lo = Arrays.asList("A", "B", "C");
-        printListUnboundedWildcard(li);
-        printListUnboundedWildcard(ls);
-        //printListObject(ls);
+//        printListUnboundedWildcard(li);
+ //       printListUnboundedWildcard(ls);
+ //       printListObject(ls);
         printListUnboundedWildcard(lo);
         printListObject(lo);
     }

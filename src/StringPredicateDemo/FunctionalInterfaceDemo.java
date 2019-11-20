@@ -3,7 +3,8 @@ package StringPredicateDemo;
 
 public class FunctionalInterfaceDemo {
     
-    public static void printTestResult(StringPredicate p, String s, String t){
+    public static void printTestResult(StringPredicate p, 
+            String s, String t){
         System.out.println(p.test(s, t));
     }
     
@@ -13,6 +14,7 @@ public class FunctionalInterfaceDemo {
         StringPredicate p2 = (s1, s2) -> s1.length() == s2.length();
         
 //        printTestResult(p1, "Java", "java");
+//        printTestResult(p1, "Java", "Java");
 //        printTestResult(p2, "Java", "java");
 //        
         printTestResult(p1.or(p2), "Java", "java");
